@@ -1,3 +1,4 @@
-export interface Mars{
-
+export interface IMars{
+    minGrid: [number,number];
+    maxGrid: [number,number];
 }

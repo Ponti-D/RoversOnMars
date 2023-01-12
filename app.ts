@@ -1,5 +1,5 @@
-import { print, promptForUserInput } from './output.js';
-import { add } from "./calc.js";
+import { print, promptForUserInput } from './src/output';
+import { add } from "./src/calc";
 
 print(`-----------------------------------------`);
 print(`-------------Welcome to Mars-------------`);
