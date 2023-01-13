@@ -3,7 +3,7 @@ import { Mars } from "./mars";
 
 describe("RoverHelper can create Mars", () => {
     let mars = new Mars(5,5);
-    it("should return a new mars", () => {
+    it("RoverHelper can create Mars", () => {
       expect(RoverHelper.initMarsPlateauMaxiCoordinates(5,5)).toBeInstanceOf(Mars);
     })
 });
