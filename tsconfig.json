@@ -1,5 +1,5 @@
 {
-  "include": ["./src/**/*", "app.ts", "src/output.ts"],
+  "include": ["./src/**/*",  "src/output.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "es2016", 
