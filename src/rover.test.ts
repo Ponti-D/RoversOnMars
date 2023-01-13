@@ -14,7 +14,7 @@ describe("Rovers", () => {
 
   test("should return rover current orientation", () => {
     let rover = new Rover();
-    rover.currentOrientation="N";
+    rover.currentOrientation="N" ;
     expect(rover.currentOrientation).toEqual("N");
   });
 
