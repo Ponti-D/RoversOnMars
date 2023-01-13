@@ -27,11 +27,66 @@ describe("RoverHelper", () => {
 
   });
 
-  test("Setting new orientation after turning", () => {
+  test("Setting new orientation for N -> L", () => {
     const rover = new Rover();
     rover.currentOrientation="N";
     expect(RoverHelper.TurnRover(rover, "L" )).toEqual(rover.currentOrientation="W");
     
+  });
+  test("Setting new orientation for N -> R ", () => {
+    const rover = new Rover();
+    rover.currentOrientation="N";
+    expect(RoverHelper.TurnRover(rover, "R" )).toEqual(rover.currentOrientation="E");
+    
+  });
+
+  test("Setting new orientation for W -> L ", () => {
+    debugger
+    const rover = new Rover();
+    rover.currentOrientation="W";
+    expect(RoverHelper.TurnRover(rover, "L" )).toEqual(rover.currentOrientation="S");
+    
+  });
+
+  test("Setting new orientation for W -> R ", () => {
+    const rover = new Rover();
+    rover.currentOrientation="W";
+    expect(RoverHelper.TurnRover(rover, "R" )).toEqual(rover.currentOrientation="N");
+    
+  });
+  test("Setting new orientation for S -> L ", () => {
+    const rover = new Rover();
+    rover.currentOrientation="S";
+    expect(RoverHelper.TurnRover(rover, "L" )).toEqual(rover.currentOrientation="E");
+    
+  });
+
+  test("Setting new orientation for S -> R ", () => {
+   debugger;
+    const rover = new Rover();
+    rover.currentOrientation="S";
+    console.log(rover.currentOrientation);
+    expect(RoverHelper.TurnRover(rover, "R" )).toEqual(rover.currentOrientation="W");
+    
+  });
+
+  test("Setting new orientation for E -> L ", () => {
+    const rover = new Rover();
+    rover.currentOrientation="E";
+    expect(RoverHelper.TurnRover(rover, "L" )).toEqual(rover.currentOrientation="N");  
+  });
+
+  test("Setting new orientation for E -> R ", () => {
+    const rover = new Rover();
+    rover.currentOrientation="E";
+    expect(RoverHelper.TurnRover(rover, "R" )).toEqual(rover.currentOrientation="S");  
+  });
+
+  test("Move rover to a new location", () => {
+    const rover = new Rover();
+    rover.currentGrid=[1,2];
+    rover.currentOrientation="N";   
+    expect(RoverHelper.MoveRover(rover)).toEqual([1,3]);
   });
 
   test("A rover allowed to move ", () => {
