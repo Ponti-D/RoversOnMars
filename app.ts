@@ -9,6 +9,8 @@ promptForUserInput(
   startAdventure
 );
 
+let roverPoolCount: number =0;
+
 function startAdventure(answer: string): void {
   print(`${answer}`);
 
