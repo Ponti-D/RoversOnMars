@@ -40,6 +40,7 @@ export class RoverHelper {
       throw new Error("commands is required");
 
     let commandArray = commands.split("");
+
     commandArray.forEach((command) => {
       let letter: TurningDirection | string = command;
 
@@ -59,6 +60,8 @@ export class RoverHelper {
   }
 
   static MoveRoverByOneGrid(rover: Rover): [number, number] | undefined {
+    if (rover === null || rover === undefined)
+    throw new Error("rover is required");
     const orientation: Orientation = rover.currentOrientation;
     let [x, y] = [...rover.currentGrid];
 
@@ -80,8 +83,14 @@ export class RoverHelper {
     }
   }
 
-  static TurnRover(rover: Rover, turn: TurningDirection): Orientation |undefined {
-    rover.currentOrientation =this.getOrientationAfterTurn(rover.currentOrientation, turn);
+  static TurnRover(
+    rover: Rover,
+    turn: TurningDirection
+  ): Orientation | undefined {
+    rover.currentOrientation = this.getOrientationAfterTurn(
+      rover.currentOrientation,
+      turn
+    );
     return rover.currentOrientation;
   }
 
