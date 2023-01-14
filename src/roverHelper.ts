@@ -27,7 +27,7 @@ export class RoverHelper {
     return myMars;
   }
 
-  static CreateRover(mars: MarsPlateau): Rover | null {
+  static CreateRover(mars: MarsPlateau): Rover  {
     let rover: Rover = new Rover();
 
     return rover;
@@ -101,7 +101,7 @@ export class RoverHelper {
   static CheckIfRoverCanMove(mars: MarsPlateau) {
     return null;
   }
-
+  
   private static getOrientationAfterTurn(
     currentOrientation: Orientation,
     turn: TurningDirection

@@ -3,7 +3,7 @@ type South = "S";
 type East = "E";
 type West = "W";
 
-export type Orientation = North | South | West | East | undefined ;
+export type Orientation = any ;//North | South | West | East | undefined | string;
 
 export interface IRover {
   id: number;
