@@ -1,7 +1,7 @@
 import { MarsPlateau } from "./mars";
 import { Orientation, Rover } from "./rover";
 
-let orientationMap = new Map<String, string>([
+let orientationMap = new Map<String, Orientation>([
   ["NL", "W"],
   ["NR", "E"],
   ["WL", "S"],
@@ -33,7 +33,32 @@ export class RoverHelper {
     return rover;
   }
 
-  static MoveRover(rover: Rover): [number, number] | undefined {
+  static NavigateRover(rover: Rover, commands: string): Rover {
+    if (rover === null || rover === undefined)
+      throw new Error("rover is required");
+    if (commands === null || commands === undefined)
+      throw new Error("commands is required");
+
+    let commandArray = commands.split("");
+    commandArray.forEach((command) => {
+      let letter: TurningDirection | string = command;
+
+      switch (letter) {
+        case "L":
+        case "R":
+          this.TurnRover(rover, letter);
+          break;
+        case "M":
+          this.MoveRoverByOneGrid(rover);
+          break;
+        default:
+          break;
+      }
+    });
+    return rover;
+  }
+
+  static MoveRoverByOneGrid(rover: Rover): [number, number] | undefined {
     const orientation: Orientation = rover.currentOrientation;
     let [x, y] = [...rover.currentGrid];
 
@@ -55,14 +80,9 @@ export class RoverHelper {
     }
   }
 
-  static TurnRover(rover: Rover, turn: TurningDirection): string | undefined {
-    let currentOrientation = rover.currentOrientation;
-    let newORientation: string | undefined = this.getOrientationAfterTurn(
-      currentOrientation,
-      turn
-    );
-
-    return newORientation;
+  static TurnRover(rover: Rover, turn: TurningDirection): Orientation |undefined {
+    rover.currentOrientation =this.getOrientationAfterTurn(rover.currentOrientation, turn);
+    return rover.currentOrientation;
   }
 
   static GetRoverCount(mars: MarsPlateau): number {
@@ -76,7 +96,7 @@ export class RoverHelper {
   private static getOrientationAfterTurn(
     currentOrientation: Orientation,
     turn: TurningDirection
-  ): string | undefined {
+  ): Orientation | undefined {
     return orientationMap.get(currentOrientation + turn);
   }
 }
