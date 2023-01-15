@@ -21,15 +21,10 @@ The Rover's new final position will then be displayed
 # After thoughts and initial design changes
 
 To turn this into a mini-application
-	#- I'd consider creating this on a web page or a mobile app.. you could gather all information and represent them all visually.
-    - secmaybe have different surface as a graphic background that the user can pick as a back-drop? ond
-    - You can drop a Rover to anywhere on that surface and starting to navigate
-    - Maybe the program can have aliens who are out to destroy the Rovers
-
-      
-	• 
-	• 
-	• 
+     I'd consider creating this on a web page or a mobile app.. you could gather all information and represent them all visually. 
+	• maybe have different surface as a graphic background that the user can pick as a back-drop? 
+	• You can drop a Rover to anywhere on that surface and starting to navigate
+	• Maybe the program can have aliens who are out to destroy the Rovers
 	• Rovers can have x number of lives or battery level before dead forever?
 	• Maybe the program can have some random missions for Rovers to try to accomplish or collecting random things to help keeping batteries level up?
 	• You can also add a function to help finding best route to x,y coordinates ?
