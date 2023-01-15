@@ -39,7 +39,7 @@ export function getRoverPosition(answer: string): void {
 }
 
 export function getRoverCommands(answer: string): void {
-  if (answer === "" && answer.length > 10) {
+  if (answer === "" || answer.length > 10) {
     print(`Your commands was too long 10 chars max `);
     setupARover;
   }
