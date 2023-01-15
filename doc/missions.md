@@ -43,7 +43,8 @@ The interfaces created here with future enchantment in mind for different type o
 
 There were functions which I thought of but not implemented for this were:
 	• Rover status
-	• CheckIfARoverCanMove()    
+	• CheckIfARoverCanMove() 
+    • isGridOutOfBound(x,y) - when assigned a Rover's position we need to check this   
 	• IsGridsFree(x,y)   - checking from UpdateOccupiedGrids(x,y) 
     • UpdateOccupiedGrids(x,y)  - contains all the grids that currently have a rover on it
 
