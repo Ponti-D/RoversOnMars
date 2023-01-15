@@ -47,7 +47,8 @@ There were functions which I thought of but not implemented for this were:
 	• IsGridsFree(x,y)   - checking from UpdateOccupiedGrids(x,y) 
     • UpdateOccupiedGrids(x,y)  - contains all the grids that currently have a rover on it
 
-# Folder structure:
+Folder structure:
+
 Currently every files for the program is under one folder './src'. Maybe I could have created 
 	•  src - code logics
 	•  ui -  ui / screens displaying / prompting inputs from users
