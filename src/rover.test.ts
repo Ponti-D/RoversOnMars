@@ -8,15 +8,13 @@ describe("Rovers", () => {
 
   test("should return rover cuurent grid", () => {
     let rover = new Rover();
-    rover.currentGrid = [2,2];
+    rover.currentGrid = [2, 2];
     expect(rover.currentGrid).toEqual([2, 2]);
   });
 
   test("should return rover current orientation", () => {
     let rover = new Rover();
-    rover.currentOrientation="N" ;
+    rover.currentOrientation = "N";
     expect(rover.currentOrientation).toEqual("N");
   });
-
-
 });

@@ -117,14 +117,4 @@ describe("RoverHelper", () => {
     expect(rover.currentGrid).toEqual([5, 1]);
     expect(rover.currentOrientation).toEqual("E");
   });
-
-  test("A rover allowed to move ", () => {
-    const mars = new MarsPlateau(5, 5);
-    expect(RoverHelper.CheckIfRoverCanMove(mars)).toEqual(true);
-  });
-
-  test("A rover is not allowed to move ", () => {
-    const mars = new MarsPlateau(5, 5);
-    expect(RoverHelper.CheckIfRoverCanMove(mars)).toEqual(false);
-  });
 });

@@ -32,5 +32,4 @@ describe("Mars", () => {
 
     expect(mars.RoverOnPlateau.length).toEqual(2);
   });
-
 });

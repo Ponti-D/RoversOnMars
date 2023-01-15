@@ -27,7 +27,7 @@ export class RoverHelper {
     return myMars;
   }
 
-  static CreateRover(mars: MarsPlateau): Rover  {
+  static CreateRover(mars: MarsPlateau): Rover {
     let rover: Rover = new Rover();
 
     return rover;
@@ -61,7 +61,7 @@ export class RoverHelper {
 
   static MoveRoverByOneGrid(rover: Rover): [number, number] | undefined {
     if (rover === null || rover === undefined)
-    throw new Error("rover is required");
+      throw new Error("rover is required");
     const orientation: Orientation = rover.currentOrientation;
     let [x, y] = [...rover.currentGrid];
 
@@ -101,7 +101,7 @@ export class RoverHelper {
   static CheckIfRoverCanMove(mars: MarsPlateau) {
     return null;
   }
-  
+
   private static getOrientationAfterTurn(
     currentOrientation: Orientation,
     turn: TurningDirection

@@ -1,14 +1,7 @@
 # TypeScript project with Tests
-
-This repository can be used as a template for creating a TypeScript project using Jest for testing.
-
+ A program pasrt of TypeScript Tech Returner program
+ 
 ## Instructions
-
-- Click the "Use this template" button
-
-- Click "Create new repository"
-
-- Give your repository a name and click "Create repository from template"
 
 - Clone down your new repository to your computer
 
@@ -16,3 +9,7 @@ This repository can be used as a template for creating a TypeScript project usin
 
 - Run `npm install` followed by `npm test` to run the tests
 
+
+# Read #[mission document](./doc/missions.md)
+
+Read the mission document for details about the program 

@@ -11,11 +11,9 @@ export class MarsPlateau implements IMars {
   minGrid: [number, number] = [0, 0];
   maxGrid: [number, number] = [0, 0];
   shape = "Rectangular";
-  RoverOnPlateau: Rover[]=[];
+  RoverOnPlateau: Rover[] = [];
 
   constructor(maxX: number, maxY: number) {
     this.maxGrid = [maxX, maxY];
   }
-
- 
 }
