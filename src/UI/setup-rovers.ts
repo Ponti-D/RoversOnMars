@@ -1,7 +1,7 @@
 import { print, promptForUserInput } from "./console";
-import { RoverHelper } from "./roverHelper";
+import { RoverHelper } from "../model/roverHelper";
 import { mars } from "./setup-mars";
-import { welcomeScreen } from "./app";
+import { welcomeScreen } from "../app";
 
 let rover = RoverHelper.CreateRover(mars);
 

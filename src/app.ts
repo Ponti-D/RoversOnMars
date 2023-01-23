@@ -1,5 +1,5 @@
-import { print, promptForUserInput } from "./console";
-import { initaliseMars } from "./setup-mars";
+import { print, promptForUserInput } from "./UI/console";
+import { initaliseMars } from "./UI/setup-mars";
 
 export function welcomeScreen() {
   console.clear();

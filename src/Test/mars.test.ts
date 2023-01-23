@@ -1,5 +1,5 @@
-import { MarsPlateau } from "./mars";
-import { Rover } from "./rover";
+import { MarsPlateau } from "../model/mars";
+import { Rover } from "../model/rover";
 
 describe("Mars", () => {
   test("should return a new mars", () => {

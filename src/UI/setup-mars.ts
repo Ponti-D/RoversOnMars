@@ -1,6 +1,6 @@
-import { MarsPlateau } from "./mars";
+import { MarsPlateau } from "../model/mars";
 import { print, promptForUserInput } from "./console";
-import { RoverHelper } from "./roverHelper";
+import { RoverHelper } from "../model/roverHelper";
 import { setupARover } from "./setup-rovers";
 
 console.clear();

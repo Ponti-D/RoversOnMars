@@ -1,6 +1,6 @@
-import { RoverHelper } from "./roverHelper";
-import { MarsPlateau } from "./mars";
-import { Rover } from "./rover";
+import { RoverHelper } from "../model/roverHelper";
+import { MarsPlateau } from "../model/mars";
+import { Rover } from "../model/rover";
 
 describe("RoverHelper", () => {
   test("RoverHelper can create Mars", () => {

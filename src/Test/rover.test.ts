@@ -1,4 +1,4 @@
-import { Rover } from "./rover";
+import { Rover } from "../model/rover";
 
 describe("Rovers", () => {
   test("should return a new rover", () => {
